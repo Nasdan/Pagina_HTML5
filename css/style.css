@@ -1,0 +1,133 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+	width: 20%;
+	min-width: 150px;
+	height: 100%;
+	background-color: #86CFE2;
+	left: 0;
+	position: absolute;
+	z-index: -1;
+	text-align: center;
+	display: inline-block;
+}
+
+#sidebar img {
+	margin: 20px 0;
+	width: 150px;
+
+	height: auto;
+	max-width: 200px;
+}
+
+nav ul li{
+	color: #ffb700;
+	font-weight: bold;
+	list-style: none;
+	width: 150px;
+	margin: 10px auto;
+	padding: 10px 10px;
+	background-color: #0772a1;
+}
+
+nav ul li:hover{
+	color: #0772a1;
+	background-color: #ffb700;
+}
+
+nav ul li:active{
+	border: 3px solid #0772a1;
+}
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	color: #1dc7f3;
+}
+
+h3{
+	color: green;
+	font-size: 12px;
+	margin: 20px 0 0 0;
+}
+
+h4{
+	color: black;
+	font-size: 12px;
+	font-style: italic;
+
+}
+article {
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	background-color: #D7EFF5;
+	z-index: -1;
+}
+
+article header {
+	position: relative; 
+	margin: 20px 40px;
+	padding: 20px 20px;
+	border-bottom: 1px solid black;
+}
+
+#foto {
+	position: absolute;
+	right: 10%;
+	width: 90px;
+	height: auto;
+}
+
+article section {
+	margin: 20px 40px;
+}
+
+article table {
+	width: 100%;
+	height: auto;
+}
+
+article table img{
+	width: 40px;
+	height: auto;
+}
+
+.imagen{
+	width: 60px;
+}
+
+.descripcion{
+	vertical-align: middle;
+}
+
+.img1{
+	margin: 0 0 0 5px;
+}
+
+.img2{
+	width: 50px;
+	height: auto;
+}
+
+footer {
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+}

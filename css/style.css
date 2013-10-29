@@ -14,22 +14,18 @@ body {
 
 #sidebar {
 	width: 20%;
-	min-width: 150px;
 	height: 100%;
 	background-color: #86CFE2;
 	left: 0;
 	position: absolute;
 	z-index: -1;
 	text-align: center;
-	display: inline-block;
 }
 
 #sidebar img {
 	margin: 20px 0;
 	width: 150px;
-
 	height: auto;
-	max-width: 200px;
 }
 
 nav ul li{
@@ -43,12 +39,12 @@ nav ul li{
 }
 
 nav ul li:hover{
-	color: #0772a1;
-	background-color: #ffb700;
+	color: #0772a1 !important;
+	background-color: #ffb700 !important;
 }
 
 nav ul li:active{
-	border: 3px solid #0772a1;
+	border: 3px solid #0772a1 !important;
 }
 
 h1{
@@ -71,6 +67,14 @@ h4{
 	font-style: italic;
 
 }
+
+#foto {
+	position: absolute;
+	right: 10%;
+	width: 90px;
+	height: auto;
+}
+
 article {
 	position: absolute;
 	display: inline-block;
@@ -86,13 +90,6 @@ article header {
 	margin: 20px 40px;
 	padding: 20px 20px;
 	border-bottom: 1px solid black;
-}
-
-#foto {
-	position: absolute;
-	right: 10%;
-	width: 90px;
-	height: auto;
 }
 
 article section {
@@ -126,8 +123,54 @@ article table img{
 	height: auto;
 }
 
-footer {
-	margin: 0 auto;
-	position: absolute;
-	bottom: 0;
+@media screen and (max-width: 900px) {
+	#sidebar {
+		width: 180px;
+		position: absolute;
+		left: 0;
+	}
+
+	article {
+		width: calc(100% - 180px); /*Funciona en Firefox, Chrome y Opera*/
+		/*En safari no funciona y el IE que tengo instalado es el 8 no he probado en otra version mas reciente*/
+	}
+
+	#foto{
+		right: 0;
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+	#sidebar {
+		width: 100%;
+		position: inherit;
+		left: 0;
+	}
+
+	#sidebar img {
+		display: inline-block;
+		margin: 5px 0;
+		width: 70px;
+		left: 0px;
+	}
+
+	nav ul li{
+		display: inline-block;
+		width: 70px;
+		font-size: 12px;
+	}
+
+	nav ul li:last-child{
+		width: 80px;
+	}
+
+	article {
+		width: 100%;
+	}
+
+	#foto{
+		width: 20%;
+	}
+
 }
